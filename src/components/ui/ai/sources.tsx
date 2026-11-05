@@ -12,14 +12,7 @@ import {
   TraceLine,
   TraceTitle,
 } from "@/components/ui/trace"
-
-function hostname(url: string) {
-  try {
-    return new URL(url).hostname
-  } catch {
-    return url
-  }
-}
+import { getHostname } from "@/lib/get-hostname"
 
 function Sources({
   sources,
@@ -61,7 +54,7 @@ function Sources({
               >
                 <TraceLine>
                   <TraceTitle>
-                    {source.title ?? hostname(source.url)}
+                    {source.title ?? getHostname(source.url)}
                     <span className="sr-only"> (opens in a new tab)</span>
                   </TraceTitle>
                   <TraceIcon>
