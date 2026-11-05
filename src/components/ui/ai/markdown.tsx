@@ -1,6 +1,10 @@
 "use client"
 
 import * as React from "react"
+import { cjk } from "@streamdown/cjk"
+import { math } from "@streamdown/math"
+import { mermaid } from "@streamdown/mermaid"
+import "katex/dist/katex.min.css"
 import { Streamdown } from "streamdown"
 import { cn } from "cn"
 
@@ -14,6 +18,7 @@ function Markdown({
   return (
     <Streamdown
       data-slot="markdown"
+      plugins={{ cjk, math, mermaid }}
       mode={streaming ? "streaming" : "static"}
       isAnimating={streaming}
       animated={streaming ? { animation: "blurIn", sep: "word" } : false}
