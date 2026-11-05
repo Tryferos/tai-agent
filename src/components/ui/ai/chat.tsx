@@ -11,16 +11,16 @@ import {
 import { MessageCircleDashedIcon, RotateCwIcon } from "lucide-react"
 import { cn } from "cn"
 
-import { Bubble, BubbleContent } from "@/components/ui/bubble"
-import { Button } from "@/components/ui/button"
+import { Bubble, BubbleContent } from "@components/ui/bubble"
+import { Button } from "@components/ui/button"
 import {
   Empty,
   EmptyDescription,
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@/components/ui/empty"
-import { Message, MessageContent } from "@/components/ui/message"
+} from "@components/ui/empty"
+import { Message, MessageContent } from "@components/ui/message"
 import {
   MessageScroller,
   MessageScrollerButton,
@@ -28,20 +28,20 @@ import {
   MessageScrollerItem,
   MessageScrollerProvider,
   MessageScrollerViewport,
-} from "@/components/ui/message-scroller"
+} from "@components/ui/message-scroller"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@/components/ui/tooltip"
-import { Trace } from "@/components/ui/trace"
-import { InlineCitationLink } from "@/components/ui/ai/inline-citation"
-import { Markdown } from "@/components/ui/ai/markdown"
-import { PromptInput, type PromptInputMessage } from "@/components/ui/ai/prompt-input"
-import { Reasoning } from "@/components/ui/ai/reasoning"
-import { Sources } from "@/components/ui/ai/sources"
-import { Suggestions } from "@/components/ui/ai/suggestions"
-import { Tool } from "@/components/ui/ai/tool"
+} from "@components/ui/tooltip"
+import { Trace } from "@components/ui/trace"
+import { InlineCitationLink } from "@components/ui/ai/inline-citation"
+import { Markdown } from "@components/ui/ai/markdown"
+import { PromptInput, type PromptInputMessage } from "@components/ui/ai/prompt-input"
+import { Reasoning } from "@components/ui/ai/reasoning"
+import { Sources } from "@components/ui/ai/sources"
+import { Suggestions } from "@components/ui/ai/suggestions"
+import { Tool } from "@components/ui/ai/tool"
 
 type Part = UIMessage["parts"][number]
 

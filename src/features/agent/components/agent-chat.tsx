@@ -1,8 +1,8 @@
-import { Chat } from "@/components/ui/ai/chat";
+import { Chat } from "@components/ui/ai/chat";
 import {
   agentChatDescription,
   agentChatSuggestions,
-} from "@/features/agent/data/agent-chat.data";
+} from "@features/agent/data/agent-chat.data";
 
 export function AgentChat() {
   return (

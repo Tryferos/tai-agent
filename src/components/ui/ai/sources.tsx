@@ -11,8 +11,8 @@ import {
   TraceIcon,
   TraceLine,
   TraceTitle,
-} from "@/components/ui/trace"
-import { getHostname } from "@/lib/get-hostname"
+} from "@components/ui/trace"
+import { getHostname } from "@lib/get-hostname"
 
 function Sources({
   sources,

@@ -1,4 +1,4 @@
-import { AgentChat } from "@/features/agent/components/agent-chat";
+import { AgentChat } from "@features/agent/components/agent-chat";
 
 export function Agent() {
   return (

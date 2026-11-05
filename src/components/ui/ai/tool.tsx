@@ -4,7 +4,7 @@ import * as React from "react"
 import { getToolName, type DynamicToolUIPart, type ToolUIPart } from "ai"
 import { WrenchIcon } from "lucide-react"
 
-import { CodeBlock, CodeBlockContent } from "@/components/ui/code-block"
+import { CodeBlock, CodeBlockContent } from "@components/ui/code-block"
 import {
   TraceCollapsible,
   TraceCollapsibleContent,
@@ -13,7 +13,7 @@ import {
   TraceIcon,
   TraceLine,
   TraceTitle,
-} from "@/components/ui/trace"
+} from "@components/ui/trace"
 
 type AnyToolPart = ToolUIPart | DynamicToolUIPart
 

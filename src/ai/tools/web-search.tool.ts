@@ -4,7 +4,7 @@ import { tavily } from "@tavily/core";
 import { tool } from "ai";
 import { z } from "zod";
 
-import { serverEnvironment } from "@/data/server.environment";
+import { serverEnvironment } from "@data/server.environment";
 
 const tavilyClient = tavily({ apiKey: serverEnvironment.TAVILY_API_KEY });
 

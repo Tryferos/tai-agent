@@ -10,7 +10,7 @@ import {
   TraceIcon,
   TraceLine,
   TraceTitle,
-} from "@/components/ui/trace"
+} from "@components/ui/trace"
 
 function Reasoning({
   text,

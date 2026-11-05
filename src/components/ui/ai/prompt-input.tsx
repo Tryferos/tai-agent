@@ -10,13 +10,13 @@ import {
   AttachmentContent,
   AttachmentMedia,
   AttachmentTitle,
-} from "@/components/ui/attachment"
+} from "@components/ui/attachment"
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupButton,
   InputGroupTextarea,
-} from "@/components/ui/input-group"
+} from "@components/ui/input-group"
 
 type PromptInputMessage = {
   text: string

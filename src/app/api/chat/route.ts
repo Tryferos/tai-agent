@@ -1,7 +1,7 @@
 import { createAgentUIStreamResponse } from "ai";
 import { z } from "zod";
 
-import { chatAgent } from "@/ai/agents/chat.agent";
+import { chatAgent } from "@ai/agents/chat.agent";
 
 const chatRequestSchema = z.object({
   messages: z.array(z.unknown()),

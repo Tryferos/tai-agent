@@ -2,8 +2,8 @@ import "server-only";
 
 import { type InferAgentUIMessage, ToolLoopAgent } from "ai";
 
-import { openai } from "@/ai/providers/openai.provider";
-import { webSearchTool } from "@/ai/tools/web-search.tool";
+import { openai } from "@ai/providers/openai.provider";
+import { webSearchTool } from "@ai/tools/web-search.tool";
 
 const chatAgentInstructions = [
   "You are a helpful assistant.",
