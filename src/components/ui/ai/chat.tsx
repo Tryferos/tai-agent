@@ -35,6 +35,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 import { Trace } from "@/components/ui/trace"
+import { InlineCitationLink } from "@/components/ui/ai/inline-citation"
 import { Markdown } from "@/components/ui/ai/markdown"
 import { PromptInput, type PromptInputMessage } from "@/components/ui/ai/prompt-input"
 import { Reasoning } from "@/components/ui/ai/reasoning"
@@ -43,6 +44,8 @@ import { Suggestions } from "@/components/ui/ai/suggestions"
 import { Tool } from "@/components/ui/ai/tool"
 
 type Part = UIMessage["parts"][number]
+
+const markdownComponents = { a: InlineCitationLink }
 
 function getMessageText(message: UIMessage) {
   return message.parts
@@ -148,6 +151,7 @@ function AssistantMessage({
               part.type === "text" ? (
                 <Markdown
                   key={`${groupIndex}-${index}`}
+                  components={markdownComponents}
                   streaming={streaming && part === lastPart}
                 >
                   {part.text}
